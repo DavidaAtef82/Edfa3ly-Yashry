@@ -2,7 +2,9 @@
 <p class="has-line-data" data-line-start="2" data-line-end="3"><a href="https://nodesource.com/products/nsolid"><img src="https://avatars3.githubusercontent.com/u/4144954?s=200&amp;v=4" alt="N|Solid"></a></p>
 <p class="has-line-data" data-line-start="4" data-line-end="5">Write a program that can price a cart of products, accept multiple products, combine offers, and display a total detailed bill in different currencies (based on user selection).</p>
 <h1 class="code-line" data-line-start=6 data-line-end=7 ><a id="Abstract_6"></a>Abstract</h1>
-<p class="has-line-data" data-line-start="7" data-line-end="8">This task is the part invoicing system I have it before, invoicing For every product sold or service rendered, an invoice is made, the first step for you to get paid, In this task, we have products, offers, and total calculations of all transactions.</p>
+<p class="has-line-data" data-line-start="7" data-line-end="8">This task is the part invoicing system I have did it before,<br/> you can enter to view the code from here 
+  https://github.com/DavidaAtef82/invoicing_v2/tree/main/inv
+  invoicing For every product sold or service rendered, an invoice is made, the first step for you to get paid, In this task, we have products, offers, and total calculations of all transactions.</p>
 <h1 class="code-line" data-line-start=9 data-line-end=10 ><a id="Problem_Definition_9"></a>Problem Definition</h1>
 <p class="has-line-data" data-line-start="10" data-line-end="12">the system must be able to add new offers for any products, it means that there are multiple offers for a single product and this offers couldn’t occur without another product must be taken, for example<br>
 product A has an offer of 50% if you buy 2 from product B and 2 from product 3, and you have to handle if the customer takes more than 2 from product A Double Offer or tribble offer there are many situations.</p>
