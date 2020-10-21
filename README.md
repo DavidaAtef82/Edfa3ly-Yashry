@@ -21,6 +21,21 @@ tbl_bill_row --&gt; refer to rows of the bill or mean the item’s type based (p
 <p class="has-line-data" data-line-start="22" data-line-end="25">Attention :<br>
 you can add and edit in the database<br>
 you can add new offers with any offer you added you must add its dependence at table tbl_offer_depend</p>
+
+<h3 class="code-line" data-line-start=25 data-line-end=26 ><a id="Code_steps_25"></a>Code steps</h3>
+<p class="has-line-data" data-line-start="26" data-line-end="28">1- Get params from the request (post or get) if exist or header it 404<br>
+2- GetAssociative array of products [key --&gt; product ID] value the product object</p>
+<ul>
+<li class="has-line-data" data-line-start="28" data-line-end="30">load each product by name from the database and add count property to the object.</li>
+</ul>
+<p class="has-line-data" data-line-start="30" data-line-end="31">3- create a bill with the products</p>
+<ul>
+<li class="has-line-data" data-line-start="31" data-line-end="32">loop the products and times price with the count for each product and make summation, by this step we get subtotal</li>
+<li class="has-line-data" data-line-start="32" data-line-end="33">get tax from tax table with tax that applies on all bills and sum each tax.</li>
+<li class="has-line-data" data-line-start="33" data-line-end="35">loop on the products and get all offers for each product with each offer we check the dependency of this offer by tbl_offer_depend and count how many times this product catches the offer.</li>
+</ul>
+<p class="has-line-data" data-line-start="35" data-line-end="36">4- get currency from user input and construct objResult to view as JSON file with required calculations.</p>
+
 <h3 class="code-line" data-line-start=25 data-line-end=26 ><a id="Installation_25"></a>Installation</h3>
 <ul>
 <li class="has-line-data" data-line-start="27" data-line-end="29">
